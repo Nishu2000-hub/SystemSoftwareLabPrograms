@@ -13,8 +13,8 @@ b. Write YACC program to recognize valid identifier, operators and keywords in t
 8. Design, develop and implement a C/C++/Java program to implement Banker’s algorithm. Assume suitable input required to demonstrate the results 
 9. Design, develop and implement a C/C++/Java program to implement page replacement algorithms LRU and FIFO. Assume suitable input required to demonstrate the results.
 
+## Execution commands of lex and yacc programs
 
-*Execution commands of lex and yacc programs* 
 **For 1a program**
  - lex filename.l
  - cc lex.yy.c -ll
