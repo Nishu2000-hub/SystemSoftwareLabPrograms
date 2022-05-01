@@ -19,14 +19,17 @@ b. Write YACC program to recognize valid identifier, operators and keywords in t
  - lex filename.l
  - cc lex.yy.c -ll
  - ./a.out
+ 
  **For 1b program**
  - lex filename.l
  - yacc -d filename.y
  - cc lex.yy.c y.tab.c -ll
+ 
 **For program 2**
  - lex filename.l
  - bison -dy filename.y
  - gcc lex.yy.c y.tab.c -ll
+ 
 **For .C extension programs**
  - cc filename.c
  - ./a.out
