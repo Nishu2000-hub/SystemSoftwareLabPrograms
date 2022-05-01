@@ -1,0 +1,27 @@
+%{
+
+#include<stdio.h>
+#include<stdlib.h>
+%}
+
+%token A B NL
+
+%%
+stmt: S NL { printf("successful grammer\n");
+			exit(0); }
+S: S1 B
+S1: ;|A S1;
+%%
+
+int main()
+{
+printf("enter the string\n");
+yyparse();
+}
+
+int yyerror()
+{
+printf("error\n");
+exit(0);
+}
+
